@@ -4,6 +4,7 @@ COPY requirements.txt /ictai
 COPY config.yaml /ictai
 COPY util/ /ictai/
 COPY templates/ /ictai/
+COPY static/ /ictai/
 COPY *.py /ictai
 WORKDIR /ictai
 RUN pip install -i https://mirrors.aliyun.com/pypi/simple/ -r requirements.txt
